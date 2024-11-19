@@ -1,3 +1,14 @@
+/**
+ * React component that displays a block of text.
+ * It allows users to expand or collapse the text based on a specified maximum line limit.
+ * When the text exceeds the maximum lines, a "Show more" button appears,
+ * allowing users to view the full text. When expanded, a "Show less" button appears.
+ *
+ * Props:
+ * - text (string): The content to display.
+ * - maxLines (number): The maximum number of lines to display by default.
+ */
+
 import React, { useRef, useState, memo, useEffect } from "react";
 
 interface ExpandableTextProps {
@@ -11,11 +22,10 @@ export const ExpandableTextContainer = memo(({ text, maxLines }: ExpandableTextP
   const [isOverflowing, setIsOverflowing] = useState(false);
 
   /**
-   * Checks and tracks whether content within a container overflows its specified height
-   *
-   * @description
-   * This effect monitors the container's content and determines if it exceeds the specified height.
-   * It uses ResizeObserver to dynamically track changes in container size and content overflow.
+   * useEffect to monitor changes in the container's size and content overflow.
+   * It checks if the content exceeds the specified height and updates the state accordingly.
+   * A ResizeObserver is used to dynamically track changes in container size,
+   * ensuring that overflow detection remains accurate when the component resizes.
    */
 
   useEffect(() => {
