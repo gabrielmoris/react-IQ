@@ -8,7 +8,7 @@ const meta = {
 
   tags: ["Expandablse", "Text", "Container"],
   parameters: {
-    layout: "fullscreen",
+    layout: "centered",
   },
   args: {},
 } satisfies Meta<typeof ContactForm>;

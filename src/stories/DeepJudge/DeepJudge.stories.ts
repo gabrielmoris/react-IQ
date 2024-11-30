@@ -6,10 +6,10 @@ const meta = {
   title: "Example/DeepJudge",
   component: ExpandableTextContainer,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ["Expandablse", "Text", "Container"],
+  tags: ["Expandablse", "Text", "Container", "autodocs"],
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
-    layout: "fullscreen",
+    layout: "centered",
   },
   args: {
     text: "",
