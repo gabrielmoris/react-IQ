@@ -13,6 +13,8 @@ input {
   border-radius: 5px;
   min-height: 1.5rem;
   width: 100%;
+  min-width: 15rem;
+  max-width: 30rem;
   padding: 0.4rem 0;
 }
 
